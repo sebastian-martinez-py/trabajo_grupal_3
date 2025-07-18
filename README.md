@@ -1,30 +1,6 @@
 # Tarea Grupal 3
 
-Aplicación web **FastAPI + MySQL + SQLAlchemy** con frontend estático simple que:
 
-1. Expone endpoints REST para crear y listar ítems (título, descripción, URL de imagen).  
-2. Sirve archivos estáticos (HTML, CSS, JS) para:
-   - Mostrar datos guardados en la API propia.
-   - Consumir una API externa (ej. imágenes de perros, según el JS provisto).
-3. Implementa un formulario para crear nuevos registros.
-
----
-
-## Tabla de Contenidos
-
-- [Arquitectura](#arquitectura)
-- [Stack Tecnológico](#stack-tecnológico)
-- [Estructura de Directorios](#estructura-de-directorios)
-- [Modelo de Datos](#modelo-de-datos)
-- [Instalación y Puesta en Marcha](#instalación-y-puesta-en-marcha)
-- [Configuración de la Base de Datos](#configuración-de-la-base-de-datos)
-- [Ejecutar el Servidor](#ejecutar-el-servidor)
-- [Endpoints de la API](#endpoints-de-la-api)
-- [Flujo Frontend](#flujo-frontend)
-- [Validaciones y Esquemas (Pydantic)](#validaciones-y-esquemas-pydantic)
-- [Notas sobre CORS y Estáticos](#notas-sobre-cors-y-estáticos)
-- [Posibles Mejoras Futuras](#posibles-mejoras-futuras)
-- [Licencia](#licencia)
 
 ---
 
@@ -262,12 +238,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 ---
 
-## Licencia
-
-Proyecto académico. Ajustar o añadir una licencia formal (por ejemplo MIT) si se desea reutilizar o publicar.
-
----
-
 ### Resumen Rápido (TL;DR)
 
 1. Crea BD `proyecto_web` en MySQL.  
@@ -276,6 +246,3 @@ Proyecto académico. Ajustar o añadir una licencia formal (por ejemplo MIT) si 
 4. `uvicorn main:app --reload` (desde `Backend/`).  
 5. Visita `http://127.0.0.1:8000/` para el frontend y `/docs` para probar la API.
 
----
-
-¿Necesitas también un `Dockerfile`, `.env.example` o tests? Pídelo y lo agrego.
