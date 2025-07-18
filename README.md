@@ -1,5 +1,7 @@
 # Tarea Grupal 3
-
+Gabriel Domingues
+Andres Uribe
+Sebastian Martinez
 
 
 ---
