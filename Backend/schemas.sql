@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS proyecto_web;
+USE proyecto_web;
+
+CREATE TABLE IF NOT EXISTS items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    image_url VARCHAR(512) NOT NULL
+);

@@ -11,3 +11,9 @@ export async function crearItem(item) {
   })
   return await res.json()
 }
+
+export async function deleteItem(id) {
+  await fetch(`/items/${id}`, {
+    method: 'DELETE'
+  })
+}

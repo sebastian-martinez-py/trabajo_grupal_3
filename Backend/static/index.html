@@ -6,16 +6,24 @@
   <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-  <h1>API externa (perros)</h1>
-  <div id="api-externa"></div>
+  <div class="container">
+    <h1>🐶 API Externa</h1>
+    
+    <div class="image-row">
+      <button id="prev-image">⬅️</button>
+      <img id="dog-image" src="" alt="Perro aleatorio" />
+      <button id="next-image">➡️</button>
+    </div>
 
-  <h1>Datos guardados (API propia)</h1>
-  <div id="api-local"></div>
+    <h1>📦 API Local</h1>
+    
+    <div id="api-local" class="card-grid"></div>
 
-  <a href="/form">Agregar nuevo</a>
+    <div class="buttons-row">
+      <a href="/form" class="button">➕ Agregar nuevo</a>
+    </div>
+  </div>
 
-  <script type="module" src="/static/js/api_externa.js"></script>
-  <script type="module" src="/static/js/api_local.js"></script>
   <script type="module" src="/static/js/main.js"></script>
 </body>
 </html>
